@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+img{
+  max-width: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family:"Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @apply bg-gradient-to-br from-sky-900 to-slate-900;
+}
+
+.btn{
+  @apply py-2 px-8 border-white border-2 bg-transparent text-white hover:opacity-75 transition-all duration-200;
+}
+
+.heading{
+  @apply text-white font-bold text-2xl md:text-5xl xl:text-7xl;
+}
+p{
+  line-height: 1.8;
+  @apply text-sm;
+}
+.showcase{
+  height: calc(100vh - 0.1px);
+  scroll-snap-type:y mandatory; 
+  overflow-y: scroll;
+}
+.showcase .overlay{
+  background: url("../901950.jpg") no-repeat center/cover;
+  background-color: rgba(0,0,0,0.3);
+  height: calc(100vh - 0.1px);
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
+  border-bottom: 5px solid white;
+}
+.showcase .overlay-nr2{
+  height: calc(100vh - 0.1px);
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
+  background: url("../photo-1465788786008-f75a725b34e9.jfif") no-repeat center/cover;
+  border-bottom: 5px solid white;
+}
+.showcase .overlay-nr3{
+  height: calc(100vh - 0.1px);
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
+  background: url("../SpaceX-Falcon-Heavy.jpg") no-repeat center/cover;
+  border-bottom: 5px solid white;
+}
+.showcase .overlay-nr4{
+  height: calc(100vh - 0.1px);
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
+  background: url("../1094562.jpg") no-repeat center/cover;
+  border-bottom: 5px solid white;
+}
+.showcase .overlay-nr5{
+  height: calc(100vh - 0.1px);
+  display:flex;
+  align-items: center;
+  justify-items: center;
+  scroll-snap-align: start;
+  background: url("../dragon.jpg") no-repeat center/cover;
+  border-bottom: 5px solid white;
+}
+.articles{
+  @apply bg-zinc-900 p-5 shadow shadow-zinc-800 text-white text-sm;
+}
+.max-width{
+  @apply max-w-6xl mx-auto;
+}
+.spinner{
+ display: flex;
+ align-items:center;
+ flex-direction: column;
+ justify-content: center;
+ min-height: 100vh;
+
+}
+.spinner article{
+  width: 5rem;
+  height: 5rem;
+  background-color: transparent;
+  border: 2px solid #10b58122;
+  border-top-color:#10b581 ;
+  border-radius: 50% ;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  to {transform: rotate(360deg);}
+}
+.about{
+  /* border: 1px white solid; */
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 10rem;
+}
+button{
+  border: 2px solid white;
+  padding: 15px;
+  cursor: pointer;
+  transition: 0.8s;
+}
+button:hover{
+  color: black;
+  background-color: white;
+}
+
+
